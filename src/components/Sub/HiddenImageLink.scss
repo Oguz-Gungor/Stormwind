@@ -1,0 +1,27 @@
+.hidden-imagelink-wrapper {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .displayed-image,
+  .displayed-label {
+    transition: all 1s;
+    z-index: 1;
+  }
+  
+  .displayed-label {
+    color: white;
+    position: absolute;
+    z-index: 2;
+    transform: rotate(270deg);
+    pointer-events: none;
+  }
+
+  &:hover > .displayed-label {
+    opacity: 0;
+  }
+
+  .displayed-image:hover {
+    opacity: 0;
+  }
+}

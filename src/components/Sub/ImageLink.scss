@@ -1,0 +1,11 @@
+.image-wrapper {
+  overflow: hidden;
+  cursor: pointer;
+  .image {
+    transition: all 0.3s;
+  }
+
+  .image:hover {
+    transform: scale(1.5);
+  }
+}

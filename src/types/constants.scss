@@ -1,0 +1,42 @@
+$primary-color: white;
+$secondary-color: #0e022f;
+$tertiary-color: #e2e2e2;
+
+.primary-palette {
+  background-color: $primary-color;
+  color: black;
+  &.line {
+    background-image: linear-gradient(to bottom, #0e022f, rgba(21, 3, 71, 0));
+  }
+}
+.secondary-palette {
+  background-color: $secondary-color;
+  color: antiquewhite;
+  &.line {
+    background-image: linear-gradient(
+      to bottom,
+      #ffffff,
+      rgba(255, 255, 255, 0)
+    );
+  }
+}
+
+.tertiary-palette {
+  background-color: $tertiary-color;
+  color: black;
+  &.line {
+    background-image: linear-gradient(to bottom, #0e022f, rgba(21, 3, 71, 0));
+  }
+}
+
+.flex {
+  display: flex;
+}
+
+.row-flex{
+  flex-direction: row;
+}
+
+.column-flex{
+  flex-direction: column;
+}

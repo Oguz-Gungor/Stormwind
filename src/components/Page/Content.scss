@@ -1,0 +1,14 @@
+@import "../../types/constants.scss";
+
+.page-content {
+  margin-left: 122px;
+}
+
+.page-content-wrapper {
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
