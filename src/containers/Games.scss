@@ -1,13 +1,13 @@
 .games-content {
-    align-items: flex-end;
-    justify-content: flex-start !important;
-    .image-flex {
-      gap: 36px;
-      .image-link-container {
-        margin-top: auto;
-        gap: 9px;
-        margin-bottom: 104px;
-      }
+  // align-items: flex-end;
+  // justify-content: flex-start !important;
+  .image-flex {
+    gap: 2.5%;
+    margin-top: auto;
+    width: 100%;
+    .image-link-container {
+      gap: 9px;
+      margin-bottom: 104px;
     }
   }
-  
+}

@@ -1,4 +1,5 @@
 import * as React from "react";
+import { i18Nget } from "../../App";
 import "./ImageLink.scss";
 
 export interface ImageLinkProps {
@@ -9,9 +10,9 @@ export interface ImageLinkProps {
 export function ImageLink(props: ImageLinkProps) {
   return (
     <div className="image-link-container flex column-flex">
-      <label>{props.label}</label>
+      <label>{i18Nget(props.label)}</label>
       <div className="image-wrapper">
-        <img src={props.src} className="image" />
+        <img src={props.src} className="image"/>
       </div>
     </div>
   );

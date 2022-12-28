@@ -4,8 +4,7 @@ import Page from "../components/Page/Page";
 import { ColorStyle } from "../types/StyleTypes";
 
 const lines: Line[] = [
-  { length: 120, placement: "15%" },
-  { length: 100, placement: "45%" },
+  { length: "13.3%", placement: "27.3%" },
 ];
 
 export function AboutUs() {

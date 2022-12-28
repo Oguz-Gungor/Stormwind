@@ -23,7 +23,7 @@ export default function Background(props: BackgroundProps) {
 }
 
 export interface Line {
-  length: number;
+  length: number | string;
   placement: string | number;
 }
 

@@ -1,20 +1,29 @@
 .hidden-imagelink-wrapper {
+  background-size: cover;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 11.8%;
+  height: 11.8%;
   .displayed-image,
   .displayed-label {
     transition: all 1s;
     z-index: 1;
   }
-  
+
+  .displayed-image {
+    width: 100%;
+    height: 100%;
+  }
+
   .displayed-label {
     color: white;
     position: absolute;
     z-index: 2;
     transform: rotate(270deg);
     pointer-events: none;
+    font-size: 1%;
   }
 
   &:hover > .displayed-label {

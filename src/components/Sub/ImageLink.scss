@@ -1,11 +1,22 @@
-.image-wrapper {
+.image-link-container {
+  height: 58.9vh;
+  width: 29.18vh;
+  justify-content: flex-end;
   overflow: hidden;
-  cursor: pointer;
-  .image {
-    transition: all 0.3s;
+  label{
+    font-size: 1.4vw;
   }
+  .image-wrapper {
+    overflow: hidden;
+    cursor: pointer;
+    .image {
+      transition: all 0.3s;
+      width: 100%;
+      height: 100%;
+    }
 
-  .image:hover {
-    transform: scale(1.5);
+    .image:hover {
+      transform: scale(1.5);
+    }
   }
 }

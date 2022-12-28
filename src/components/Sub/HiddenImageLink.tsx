@@ -11,7 +11,7 @@ export function HiddenImageLink(props: HiddenImageLinkProps) {
       className="hidden-imagelink-wrapper"
       style={{ backgroundImage: `url(${props.src})` }}
     >
-      <label className="displayed-image displayed-label">
+      <label className="displayed-label">
         {props.label}
       </label>
       <img

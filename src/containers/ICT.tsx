@@ -1,4 +1,5 @@
 import * as React from "react";
+import { i18Nget } from "../App";
 import { Line } from "../components/Page/Background";
 import Page from "../components/Page/Page";
 import { ImageLink } from "../components/Sub/ImageLink";
@@ -6,19 +7,21 @@ import { ColorStyle } from "../types/StyleTypes";
 import "./ICT.scss";
 
 const lines: Line[] = [
-  { length: 120, placement: "30%" },
-  { length: 360, placement: "60%" },
+  { length: "13.8vh", placement: "22.6%" },
+  { length: "52.3vh", placement: "37%" },
+  { length: "31.98vh", placement: "48.75%" },
+  { length: "11.1vh", placement: "91.7%" },
 ];
 
 const images = [
-  { src: "Rectangle10.png", label: "Development" },
+  { src: "Rectangle10.png", label: "DEVELOPMENT_TITLE" },
   {
     src: "Rectangle18.png",
-    label: "Information and Communications Technology",
+    label: "ICT_TITLE",
   },
-  { src: "Rectangle5.png", label: "SEO" },
-  { src: "Rectangle20.png", label: "Consalting" },
-  { src: "Rectangle21.png", label: "Consalting" },
+  { src: "Rectangle5.png", label: "SEO_TITLE" },
+  { src: "Rectangle20.png", label: "CONSALTING" },
+  { src: "Rectangle21.png", label: "CONSALTING" },
 ];
 
 export function ICT() {
@@ -39,5 +42,5 @@ export const ImageMenu = (images: JSX.Element[]) => (
 
 const ImagLinkMenu = () =>
   ImageMenu(
-    images.map(({ src, label }) => <ImageLink src={src} label={label} />)
+    images.map(({ src, label }) => <ImageLink key={src} src={src} label={label} />)
   );

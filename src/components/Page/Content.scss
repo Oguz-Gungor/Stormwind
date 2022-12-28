@@ -1,7 +1,13 @@
 @import "../../types/constants.scss";
 
 .page-content {
-  margin-left: 122px;
+  margin-left: 8.5%;
+  margin-right: 8.5%;
+  width: 100%;
+  height: 100%;
+  display: flex;  
+  justify-content: center;
+  align-items: center;
 }
 
 .page-content-wrapper {
@@ -9,6 +15,4 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }

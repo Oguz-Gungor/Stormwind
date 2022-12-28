@@ -1,12 +1,19 @@
 .ict-content {
-  align-items: flex-end;
-  justify-content: flex-start !important;
-  .image-flex {
-    gap: 36px;
-    .image-link-container {
+  .page-content{
+    justify-content: flex-start;
+    .image-flex {
+      width: 100%;
+      overflow: scroll;
+      gap: 2.5%;
       margin-top: auto;
-      gap: 9px;
-      margin-bottom: 104px;
+
+      &::-webkit-scrollbar{display: none;}
+      .image-link-container {
+        margin-top: auto;
+        gap: 1vh;
+        margin-bottom: 11.12vh;
+      }
     }
   }
+  
 }
