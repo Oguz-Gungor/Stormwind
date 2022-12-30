@@ -1,0 +1,30 @@
+@mixin arrow-link($link-color, $hover-color) {
+  cursor: pointer;
+  &:hover {
+    .round {
+      width: 36px;
+      height: 36px;
+      background-color: $hover-color;
+    }
+    .label {
+      color: $hover-color;
+    }
+    .arrow {
+      fill: $hover-color;
+    }
+  }
+  .round {
+    transition: all 0.3s;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: $link-color;
+  }
+  .label {
+    color: $link-color;
+  }
+  .arrow {
+    transition: all 0.3s;
+    fill: $link-color;
+  }
+}

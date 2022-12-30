@@ -1,0 +1,40 @@
+@import "../types/mixins.scss";
+@import "../types/constants.scss";
+
+.about-us-content {
+  .main-container {
+    width: 100%;
+    justify-content: space-between;
+    .left-flex {
+      gap: 23px;
+      .description-flex{
+        gap: 5px;
+      }
+      .connect-us-link-container {
+        margin-top: auto;
+        gap: 18px;
+        height: 36px;
+        align-items: center;
+        margin-bottom: 32px;
+        @include arrow-link($link-color2, $link-hover-color2);
+      }
+    }
+    .right-flex {
+      width: min-content;
+      gap: 40px;
+      .statistics-flex {
+        justify-content: space-between;
+        .statistic-cell {
+          gap: 13px;
+          align-items: center;
+          .label {
+            font-size: 20px;
+          }
+          .value {
+            font-size: 64px;
+          }
+        }
+      }
+    }
+  }
+}

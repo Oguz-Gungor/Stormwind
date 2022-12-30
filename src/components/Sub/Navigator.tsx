@@ -20,12 +20,18 @@ interface INavbarProps {
 }
 function NavBar(props: INavbarProps) {
   return (
-    <div className="flex row-flex navbar-container">
-      {props.pageNameList.map((pageName) => (
-        <a className="navbar-element" href={`#${pageName}`}>
-          {pageName} |{" "}
-        </a>
-      ))}
+    <div className="header-background">
+      <div id="Home" className="flex row-flex header-container">
+        <span className="brand" > Stormwind</span>
+        <div className="flex row-flex navbar-container">
+          {props.pageNameList.map((pageName) => (
+            <a className="navbar-element" href={`#${pageName}`}>
+              {pageName.replace(/([a-z])([A-Z])/g, "$1 $2")}
+            </a>
+          ))}
+          Language Combo
+        </div>
+      </div>
     </div>
   );
 }

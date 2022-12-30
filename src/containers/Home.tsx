@@ -18,7 +18,6 @@ export default function Home() {
       colorStyle={ColorStyle.PRIMARY}
       lines={lines}
       className="home-content"
-      id={Home.name}
     >
       <div className="flex column-flex home-flex">
         {upperFlex()}
