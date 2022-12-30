@@ -8,7 +8,11 @@ export interface PageProps extends BackgroundProps, ContentProps {}
 export default function Page(props: PageProps) {
   return (
     <>
-      <Content colorStyle={props.colorStyle} className={props.className}>
+      <Content
+        colorStyle={props.colorStyle}
+        className={props.className}
+        id={props.id}
+      >
         <Background colorStyle={props.colorStyle} lines={props.lines} />
         <div className="page-content">{props.children}</div>
       </Content>

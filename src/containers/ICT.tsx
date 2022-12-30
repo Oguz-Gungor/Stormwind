@@ -30,6 +30,8 @@ export function ICT() {
       colorStyle={ColorStyle.TERTIARY}
       lines={lines}
       className="ict-content"
+      id={ICT.name}
+
     >
       <ImagLinkMenu />
     </Page>
