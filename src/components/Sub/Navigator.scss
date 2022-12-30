@@ -1,0 +1,9 @@
+@import "../../types/constants.scss";
+
+.navbar-container{
+    @extend .page-layout;
+    justify-content: flex-end;
+    .navbar-element{
+        cursor: pointer;
+    }
+}

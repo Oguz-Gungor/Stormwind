@@ -1,11 +1,10 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import Background from "./components/Page/Background";
 import Home from "./containers/Home";
 import { AboutUs } from "./containers/AboutUs";
 import { ICT } from "./containers/ICT";
 import { Games } from "./containers/Games";
+import { Navigator } from "./components/Sub/Navigator";
 
 const lang = "en";
 const i18: { [lang: string]: { [key: string]: string } } = {
@@ -30,14 +29,8 @@ export const i18Nget = (key: string) => {
 };
 
 function App() {
-  return (
-    <div>
-      <Home />
-      <AboutUs />
-      <ICT />
-      <Games />
-    </div>
-  );
+  console.log(Home.name);
+  return <Navigator pageList={[Home, AboutUs, ICT, Games]} />;
 }
 
 export default App;

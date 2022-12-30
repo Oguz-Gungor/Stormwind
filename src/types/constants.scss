@@ -2,6 +2,11 @@ $primary-color: white;
 $secondary-color: #0e022f;
 $tertiary-color: #e2e2e2;
 
+.page-layout {
+  margin-left: 8.5vw;
+  margin-right: 8.5vw;
+}
+
 .primary-palette {
   background-color: $primary-color;
   color: black;
