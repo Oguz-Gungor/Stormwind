@@ -15,24 +15,47 @@ const lines: Line[] = [
 
 const images = [
   {
-    src: "image1.png",
-    displayedImage: "Rectangle28.png",
-    label: "Snakes and Ladders",
+    Component: HiddenImageLink,
+    props: {
+      src: "image1.png",
+      displayedImage: "Rectangle28.png",
+      label: "Snakes and Ladders",
+    },
   },
   {
-    src: "image2.png",
-    displayedImage: "Rectangle28.png",
-    label: "Minesweeper",
+    Component: HiddenImageLink,
+    props: {
+      src: "Rectangle24.png",
+      displayedImage: "Rectangle23.png",
+      hiddenlabel: <img src="ExploreWithEnjoyHidden.png" />,
+      label: <img src="ExploreWithEnjoy.png" />,
+      className: "hidden-text",
+      direction: "normal",
+    },
   },
   {
-    src: "image3.png",
-    displayedImage: "Rectangle28.png",
-    label: "Word Hunter Cross",
+    Component: HiddenImageLink,
+    props: {
+      src: "image2.png",
+      displayedImage: "Rectangle28.png",
+      label: "Minesweeper",
+    },
   },
   {
-    src: "image5.png",
-    displayedImage: "Rectangle28.png",
-    label: "Crazy Eights",
+    Component: HiddenImageLink,
+    props: {
+      src: "image3.png",
+      displayedImage: "Rectangle28.png",
+      label: "Word Hunter Cross",
+    },
+  },
+  {
+    Component: HiddenImageLink,
+    props: {
+      src: "image5.png",
+      displayedImage: "Rectangle28.png",
+      label: "Crazy Eights",
+    },
   },
 ];
 
@@ -85,12 +108,12 @@ const rightFlex = () => {
       <div className="flex row-flex store-flex">
         <StoreLink
           image="google-play1.png"
-          label="GP"
+          label="Google Play"
           hiddenLabel={<div>GET IT ON</div>}
         />
         <StoreLink
           image="apple.png"
-          label="AS"
+          label="App Store"
           hiddenLabel={<div>DOWNLOAD</div>}
         />
       </div>
@@ -100,11 +123,5 @@ const rightFlex = () => {
 
 const HiddenImageMenu = () =>
   ImageMenu(
-    images.map(({ src, displayedImage, label }) => (
-      <HiddenImageLink
-        src={src}
-        displayedImage={displayedImage}
-        label={label}
-      />
-    ))
+    images.map(({ Component, props }) => <Component {...(props as any)} />)
   );

@@ -4,12 +4,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 11.8%;
-  height: 11.8%;
   .displayed-image,
   .displayed-label {
     transition: all 1s;
     z-index: 1;
+  }
+  .hidden-label {
+    z-index: -1;
   }
 
   .displayed-image {
@@ -17,20 +18,23 @@
     height: 100%;
   }
 
-  .displayed-label {
+  .displayed-label,
+  .hidden-label {
     color: white;
     position: absolute;
     z-index: 2;
-    transform: rotate(270deg);
     pointer-events: none;
     font-size: 48px;
+    &.rotated {
+      transform: rotate(270deg);
+    }
+  }
+  .hidden-label {
+    z-index: 0;
   }
 
-  &:hover > .displayed-label {
-    opacity: 0;
-  }
-
-  .displayed-image:hover {
+  &:hover > .displayed-label,
+  &:hover > .displayed-image {
     opacity: 0;
   }
 }
