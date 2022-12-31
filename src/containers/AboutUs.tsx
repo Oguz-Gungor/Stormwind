@@ -1,7 +1,7 @@
 import * as React from "react";
-import { Line } from "../components/Page/Background";
+import { Line } from "../components/Page/Background/Background";
 import Page from "../components/Page/Page";
-import { ArrowLink } from "../components/Sub/ArrowLink";
+import { ArrowLink } from "../components/Sub/ArrowLink/ArrowLink";
 import { ColorStyle } from "../types/StyleTypes";
 import "./AboutUs.scss";
 

@@ -1,13 +1,36 @@
 .games-content {
-  // align-items: flex-end;
-  // justify-content: flex-start !important;
-  .image-flex {
-    gap: 2.5%;
-    margin-top: auto;
+  height: 1267px;
+  .container-flex {
     width: 100%;
-    .image-link-container {
-      gap: 9px;
-      margin-bottom: 104px;
+    height: 100%;
+    .container-mark{
+      margin-top: 166px;
+    }
+    .description-flex{
+      justify-content: space-between;
+      margin-top: 21px;
+      .right-flex{
+        max-width: 477px;
+        gap: 8px;
+        .store-flex{
+          gap: 16px;
+        }
+      }
+      .left-flex{
+        max-width: 582px;
+        gap: 8px;
+      }
+    }
+    .image-flex {
+      gap: 36px;
+      margin-top: auto;
+      width: 100%;
+      .hidden-imagelink-wrapper {
+        gap: 9px;
+        width: 170px;
+        height: 553px;
+        margin-bottom: 209px;
+      }
     }
   }
 }

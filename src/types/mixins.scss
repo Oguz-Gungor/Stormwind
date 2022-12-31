@@ -1,4 +1,7 @@
 @mixin arrow-link($link-color, $hover-color) {
+  gap: 18px;
+  height: 36px;
+  align-items: center;
   cursor: pointer;
   &:hover {
     .round {

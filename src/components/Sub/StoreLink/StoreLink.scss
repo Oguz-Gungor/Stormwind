@@ -1,0 +1,46 @@
+.store-link-container {
+  transition: all 0.3s;
+  background-color: black;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #A6A6A6;
+  border-radius: 7.3px;
+  padding: 9px;
+  overflow: hidden;
+  height: 40px;
+  width: 123.65px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  .hidden-label {
+    width: 0px;
+    height: 0px;
+  }
+  .label{
+    width: 88px;
+    height: min-content;
+  }
+  .hidden-label, .label{
+    display: flex;
+    transition: all .3s;
+    color: white;
+    overflow: hidden;
+  }
+  .hidden-label, .label, .image{
+    pointer-events: stroke;
+  }
+  .image{
+    width: 25px;
+    height: 25px;
+  }
+  &:hover {
+    .hidden-label {
+      width: 88px;
+      height: min-content;
+    }
+    .label {
+      width: 0px;
+      height: 0px;
+    }
+  }
+}

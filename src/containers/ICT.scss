@@ -1,19 +1,53 @@
-.ict-content {
-  .page-content{
-    justify-content: flex-start;
-    .image-flex {
-      width: 100%;
-      overflow: scroll;
-      gap: 2.5%;
-      margin-top: auto;
+@import "../types/mixins.scss";
+@import "../types/constants.scss";
 
-      &::-webkit-scrollbar{display: none;}
-      .image-link-container {
+.ict-content {
+  height: 1083px;
+  .page-content {
+    justify-content: flex-start;
+    width: 100%;
+    overflow: hidden;
+    .container-flex {
+      width: 100%;
+      height: 100%;
+      align-items: space-between;
+      .container-mark {
+        margin-top: 116px;
+      }
+      .description-flex {
+        margin-top: 9px;
+        gap: 143px;
+        font-size: 20px;
+
+        .left-flex {
+          gap: 8px;
+          max-width: 473px;
+        }
+        .right-flex {
+          gap: 18px;
+          max-width: 582px;
+          .explore-link-container {
+            @include arrow-link($link-color, $link-hover-color3);
+          }
+        }
+      }
+      .image-flex {
+        width: min-content;
+        overflow: scroll;
+        gap: 36px;
         margin-top: auto;
-        gap: 1vh;
-        margin-bottom: 11.12vh;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+        .image-link-container {
+          margin-top: auto;
+          gap: 9px;
+          margin-bottom: 104px;
+          width: 273px;
+          height: 551px;
+        }
       }
     }
   }
-  
 }

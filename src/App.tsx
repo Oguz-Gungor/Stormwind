@@ -4,7 +4,7 @@ import Home from "./containers/Home";
 import { AboutUs } from "./containers/AboutUs";
 import { ICT } from "./containers/ICT";
 import { Games } from "./containers/Games";
-import { Navigator } from "./components/Sub/Navigator";
+import { Navigator } from "./components/Sub/Navigator/Navigator";
 
 const lang = "en";
 const i18: { [lang: string]: { [key: string]: string } } = {

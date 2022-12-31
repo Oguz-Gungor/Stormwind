@@ -1,5 +1,5 @@
 import * as React from "react";
-import { StyleProps } from "../../types/ComponentTypes";
+import { StyleProps } from "../../../types/ComponentTypes";
 import "./Content.scss";
 
 export interface ContentProps extends StyleProps {

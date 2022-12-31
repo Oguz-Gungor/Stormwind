@@ -1,6 +1,6 @@
 import * as React from "react";
 import { i18Nget } from "../App";
-import { Line } from "../components/Page/Background";
+import { Line } from "../components/Page/Background/Background";
 import Page from "../components/Page/Page";
 import { ColorStyle } from "../types/StyleTypes";
 import "./Home.scss";

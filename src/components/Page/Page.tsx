@@ -1,7 +1,7 @@
 import * as React from "react";
 import { StyleProps } from "../../types/ComponentTypes";
-import Background, { BackgroundProps } from "./Background";
-import Content, { ContentProps } from "./Content";
+import Background, { BackgroundProps } from "./Background/Background";
+import Content, { ContentProps } from "./Content/Content";
 
 export interface PageProps extends BackgroundProps, ContentProps {}
 

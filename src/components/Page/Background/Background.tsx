@@ -1,6 +1,6 @@
 import * as React from "react";
-import { ComponentProps, StyleProps } from "../../types/ComponentTypes";
-import { ColorStyle } from "../../types/StyleTypes";
+import { ComponentProps, StyleProps } from "../../../types/ComponentTypes";
+import { ColorStyle } from "../../../types/StyleTypes";
 import "./Background.scss";
 
 export interface BackgroundProps extends StyleProps {

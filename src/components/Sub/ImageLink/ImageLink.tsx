@@ -1,5 +1,5 @@
 import * as React from "react";
-import { i18Nget } from "../../App";
+import { i18Nget } from "../../../App";
 import "./ImageLink.scss";
 
 export interface ImageLinkProps {

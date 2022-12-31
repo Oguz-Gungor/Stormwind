@@ -12,9 +12,7 @@
       }
       .connect-us-link-container {
         margin-top: auto;
-        gap: 18px;
-        height: 36px;
-        align-items: center;
+       
         margin-bottom: 32px;
         @include arrow-link($link-color2, $link-hover-color2);
       }

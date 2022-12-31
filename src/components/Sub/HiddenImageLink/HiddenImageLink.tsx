@@ -1,5 +1,5 @@
 import * as React from "react";
-import { ImageLinkProps } from "./ImageLink";
+import { ImageLinkProps } from "../ImageLink/ImageLink";
 import "./HiddenImageLink.scss";
 
 export interface HiddenImageLinkProps extends ImageLinkProps {

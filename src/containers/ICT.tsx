@@ -1,8 +1,10 @@
 import * as React from "react";
 import { i18Nget } from "../App";
-import { Line } from "../components/Page/Background";
+import { Line } from "../components/Page/Background/Background";
 import Page from "../components/Page/Page";
-import { ImageLink } from "../components/Sub/ImageLink";
+import { ArrowLink } from "../components/Sub/ArrowLink/ArrowLink";
+import { ContainerMark } from "../components/Sub/ContainerMark/ContainerMark";
+import { ImageLink } from "../components/Sub/ImageLink/ImageLink";
 import { ColorStyle } from "../types/StyleTypes";
 import "./ICT.scss";
 
@@ -31,12 +33,37 @@ export function ICT() {
       lines={lines}
       className="ict-content"
       id={ICT.name}
-
     >
-      <ImagLinkMenu />
+      <div className="flex column-flex container-flex">
+        <ContainerMark />
+        {descriptionFlex()}
+        <ImagLinkMenu />
+      </div>
     </Page>
   );
 }
+
+const descriptionFlex = () => {
+  return (
+    <div className="flex row-flex description-flex">
+      <div className="flex column-flex left-flex">
+        <div>STORMWIND ICT</div>
+        <div>
+          Provides consultancy and software support services in the field of
+          information and communication technology.
+        </div>
+      </div>
+      <div className="flex column-flex right-flex">
+        <div>
+          To its customers from different sectors, who are experts in the field
+          of information and communication technology and serve in many fields;
+          a technology firm that caters specifically to their needs.
+        </div>
+        <ArrowLink className="explore-link-container" label="Explore" />
+      </div>
+    </div>
+  );
+};
 
 export const ImageMenu = (images: JSX.Element[]) => (
   <div className="flex display-flex image-flex">{images}</div>
@@ -44,5 +71,7 @@ export const ImageMenu = (images: JSX.Element[]) => (
 
 const ImagLinkMenu = () =>
   ImageMenu(
-    images.map(({ src, label }) => <ImageLink key={src} src={src} label={label} />)
+    images.map(({ src, label }) => (
+      <ImageLink key={src} src={src} label={label} />
+    ))
   );
