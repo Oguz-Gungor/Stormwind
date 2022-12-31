@@ -29,8 +29,16 @@ export const i18Nget = (key: string) => {
 };
 
 function App() {
-  console.log(Home.name);
-  return <Navigator pageList={[Home, AboutUs, ICT, Games]} />;
+  return (
+    <Navigator
+      pageList={[
+        { Component: Home },
+        { name: "AboutUs", Component: AboutUs },
+        { name: "ICT", Component: ICT },
+        { name: "Games", Component: Games },
+      ]}
+    />
+  );
 }
 
 export default App;
