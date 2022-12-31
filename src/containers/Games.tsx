@@ -65,7 +65,7 @@ export function Games() {
       colorStyle={ColorStyle.PRIMARY}
       lines={lines}
       className="games-content"
-      id={Games.name}
+      id={"Games"}
     >
       <div className="flex column-flex container-flex">
         <ContainerMark />

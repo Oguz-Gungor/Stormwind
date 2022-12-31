@@ -12,7 +12,7 @@ export function AboutUs() {
     <Page
       colorStyle={ColorStyle.SECONDARY}
       lines={lines}
-      id={AboutUs.name}
+      id={"AboutUs"}
       className="about-us-content"
     >
       <div className="flex row-flex main-container">

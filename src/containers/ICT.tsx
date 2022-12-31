@@ -32,7 +32,7 @@ export function ICT() {
       colorStyle={ColorStyle.TERTIARY}
       lines={lines}
       className="ict-content"
-      id={ICT.name}
+      id={"ICT"}
     >
       <div className="flex column-flex container-flex">
         <ContainerMark />
